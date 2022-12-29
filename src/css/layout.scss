@@ -1,7 +1,53 @@
+@font-face {
+    font-family: "neodgm";         // 이름 선언
+    src: url("/fonts/neodgm.ttf"); // 내가 저장한 경로!
+}
+
+.ps-md-3{
+    padding-left: 5rem!important;
+}
+.potext{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pogame{
+    border: solid;
+    background-color: grey;
+    border-color: grey;
+    
+}
+.swiper-pointer-events {
+    margin-top: 5rem;
+}
+.swiper-pagination{
+    background-color: rgba(128, 128, 128, 0);
+}
+.blickwindow{
+    width: 90%;
+    height: 70%;
+    margin-right: 2.5rem;
+    margin-bottom: 8.5rem;
+
+}
+
+.fts{
+    font-size: 1.8rem;
+}
+
+.skill p{
+    margin-bottom: 5rem;
+}
+
+
+
 *{
-    font-family: 'Gothic A1', sans-serif;
-    font-weight: 300;
-    letter-spacing: -0.083em;
+    font-family: "neodgm", sans-serif;
+    font-size: 1.2rem;
+    color: #00FF19;
+    background-color: black;
 }
 li{
     list-style: none;
@@ -9,38 +55,31 @@ li{
 .h100vh{ height: 100vh;}
 
 #root{
+    
     a{
-        color:black
+        color:rgb(255, 255, 255);
+        font-size: 1.5rem;
+        padding-right: 5rem;
     }
     a:hover{
-        color:rgb(227, 96, 73);
+        color:#ffff00;
     }
 
     h1{
         max-width:9.5rem;
         svg{
-            height:2.8rem;
-            transform: translateY(-30%);
+            height:4rem;
             transform-origin: center;
             transition: 0.5s;
-            #blackIcon{
-                transform: translateY(-200%);
-                transition: 0.5s;
-            }
-            #deaback{
-                transform: translateY(-200%);
-                transition: 0.5s;
-            }
-
         }
 
     }
     
 
     #hd{
-        background-color: white;
+        background-color: rgba(0, 0, 0, 0.875);
         &.scroll{
-            background-color: rgba(0,0,0,.5);
+            background-color: rgba(0, 0, 0, 0.984);
            
             a{
                 color:white;
@@ -101,14 +140,13 @@ li{
              .swiper-slide{
                 min-height: calc(100vh - 120px);
                 display: flex;
-                flex-direction: column;
-                justify-content: center;
+                flex-direction: row;
+                justify-content: flex-end;
                 align-items: center;
-             }
+            }
              .react{
                 background:url(https://img.cjthemarket.com/images/file/display/586/20221122103138241.jpg?RS=1920x500) no-repeat center;
                 background-size: cover;
-                color:white;
                 @media (max-width:768px) {
                     background-image: url(https://img.cjthemarket.com/images/file/display/084/20220901181851256.png?RS=1920x500);
                     
@@ -127,8 +165,11 @@ li{
         }
     }
 
-    .section{
-        height: calc(100vh - 120px);
-        min-height:800px;
-    }
+    
 }
+hr {
+    background:white;
+    height:5px;
+    border:0;
+}
+

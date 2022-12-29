@@ -6,15 +6,18 @@ import 'swiper/css/scrollbar';
 import Header from './component/Hd';
 import Worksswiper from './component/Swiper';
 import Preinterview from './component/Preinterview'
+import Portfolioa from './component/Portfolioa'
+import Contact from './component/Contact'
+
 
 
 function App() {
   return (
     <div className="App" id="top">
       <Header></Header>
-      <Worksswiper></Worksswiper>      
-      <Preinterview contentid="me" objnm="noticeObj"  title="공지사항" ></Preinterview>
-      <Preinterview contentid="preInterview" objnm="preinterview"   title="사전인터뷰" ></Preinterview>
+      <Portfolioa></Portfolioa>
+      <Preinterview contentid="me" objnm="noticeObj"  title="<INFO>" ></Preinterview>
+      <Contact></Contact>
       <Footer></Footer>
     </div>
   );
@@ -22,7 +25,7 @@ function App() {
 
 const Footer = () =>{
   return(
-    <footer className="py-5 border-top">
+    <footer className="py-5">
       <ul className="d-flex justify-content-center">
         <li><a href="">git</a></li>
         <li><a href="">instar</a></li>

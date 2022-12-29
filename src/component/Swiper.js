@@ -2,18 +2,19 @@ import swiperDBlink from '../json/swiperinof.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 
+
 const Worksswiper = () => {
     const swiperinfo = swiperDBlink.portfolio;
       return(
-        <Swiper className='workSection'
+        <Swiper className='workSection border'
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={0}
-        slidesPerView={1.5}
+        slidesPerView={1}
         centeredSlides={true}
-        autoplay={{
-          delay: 4000,
-          disableOnInteraction: false,
-        }}
+        //autoplay={{
+        //  delay: 4000,
+        //  disableOnInteraction: false,
+        //}}
         loop = {true} 
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
@@ -25,7 +26,11 @@ const Worksswiper = () => {
           {
             swiperinfo.map( ( item, index ) => {
                    return(
-                    <SwiperSlide className={item.cls} key={'sw'+index} style={{ background : item.bg }}>{item.worktitle}</SwiperSlide>
+                    <div className='overflow-hidden'>
+                    <SwiperSlide className='pogame'>
+                      <div className='blickwindow'></div>
+                    </SwiperSlide>
+                    </div>
                    )
               }
             )
