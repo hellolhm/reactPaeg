@@ -6,7 +6,8 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 const Worksswiper = () => {
     const swiperinfo = swiperDBlink.portfolio;
       return(
-        <Swiper className='workSection border'
+        
+        <Swiper className='workSection'
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={0}
         slidesPerView={1}
@@ -23,20 +24,19 @@ const Worksswiper = () => {
         }}
         onSwiper={(swiper) => console.log(swiper)}
          >
+
           {
             swiperinfo.map( ( item, index ) => {
                    return(
-                    <div className='overflow-hidden'>
                     <SwiperSlide className='pogame'>
-                      <div className='blickwindow'></div>
+                      
                     </SwiperSlide>
-                    </div>
                    )
               }
             )
             
           }
-             
+          
         </Swiper>
       )
   }

@@ -1,11 +1,11 @@
 {
   "portfolio" : 
   [{
-    "worktitle" : "리액트광고웹앱",
+    "worktitle" : "부트스트랩 광고웹앱",
     "worktime" : "4주",
     "co" : "단독작업",
     "app" :  ["illust","photoshop","v-code"],
-    "cls" : "react",
+    "cls" : "boot",
     "bg" : "black"
   },
   {

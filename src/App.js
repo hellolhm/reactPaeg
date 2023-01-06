@@ -13,7 +13,7 @@ import Contact from './component/Contact'
 
 function App() {
   return (
-    <div className="App" id="top">
+    <div className="App container-lg" id="top">
       <Header></Header>
       <Portfolioa></Portfolioa>
       <Preinterview contentid="me" objnm="noticeObj"  title="<INFO>" ></Preinterview>

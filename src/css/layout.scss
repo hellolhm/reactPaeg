@@ -3,63 +3,164 @@
     src: url("/fonts/neodgm.ttf"); // 내가 저장한 경로!
 }
 
-.ps-md-3{
-    padding-left: 5rem!important;
+.hp{
+    width: 100%;
+    height: 20px;
+    background-color: red;
 }
-.potext{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.mp{
+    width: 100%;
+    height: 20px;
+    background-color: blue;
 }
 .pogame{
-    border: solid;
-    background-color: grey;
-    border-color: grey;
-    
+    background-color: rgb(2, 2, 2);
+    height: 500px; 
+}
+.margin-1{
+    margin-left: -1.5rem;
+}
+.bg-gray{
+    background-color: #808080;
 }
 .swiper-pointer-events {
     margin-top: 5rem;
 }
 .swiper-pagination{
-    background-color: rgba(128, 128, 128, 0);
-}
-.blickwindow{
-    width: 90%;
-    height: 70%;
-    margin-right: 2.5rem;
-    margin-bottom: 8.5rem;
-
+    background-color: rgba(253, 253, 253, 0);
 }
 
 .fts{
     font-size: 1.8rem;
 }
 
-.skill p{
-    margin-bottom: 5rem;
+.skill_l{
+    border-top: dashed 1px;
 }
+.skill_r{
+    border-top: dashed 1px;
+    border-left: dashed 1px;
+}
+
+.line::after{
+    content: "";
+    display: block;
+    border-bottom: solid 1px white;
+    width: 150px;
+    margin: 5px 0;
+        @media (max-width:768px){
+                content: "";
+                display: block;
+                border-bottom: solid 1px white;
+                width: 120px;
+                margin: 3px 0px;
+        }
+    
+}
+
+.ofh{
+    overflow: hidden;
+}
+.dlfur{
+    border:dashed 1px; 
+    
+}
+
+textarea{
+    border: solid 1px rgb(8, 241, 0);
+    height: 15rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    resize: none;
+    margin-bottom: -0.7rem;
+}
+textarea:focus {
+    outline: none;
+}
+textarea::placeholder{
+    color: #04f714;
+}
+
+input::placeholder{
+    color: #04f714;
+    font-size: 0.8rem;
+    padding-left: 0.5rem;
+}
+input:focus {
+    outline: none;
+}
+.border{
+    border-color: #04f714 !important;
+}
+.work input,.lang input{
+    margin-left: 0.5rem;
+}
+
+.work label,.lang label{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.one{
+    border: dashed 2px;
+}
+.tow{
+    border-top: dashed 2px;
+    border-right: dashed 2px;
+    border-bottom: dashed 2px;
+}
+
+.name{
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+    border-right: solid 2px;
+}
+.talk{
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+}
+#me{
+    // padding-left: 5rem;
+    // padding-right: 5rem;
+}
+input[name=company],[name=company_w],[name=talk],[name=day],[name=trip-start]{
+    width: 95%;
+    border: 0;
+}
+input::placeholder{
+    color: #808080;
+    font-size: 1rem;
+    text-align: start;
+}
+.company_w{
+    border-left: solid 1px ;
+}
+.talk_line{
+    border-left: solid 1px;
+}
+
+
 
 
 
 *{
     font-family: "neodgm", sans-serif;
     font-size: 1.2rem;
-    color: #00FF19;
-    background-color: black;
+    color: #04f714;
+    background-color: rgb(9, 9, 24);
 }
 li{
     list-style: none;
 }
 .h100vh{ height: 100vh;}
 
+
+
 #root{
     
     a{
         color:rgb(255, 255, 255);
         font-size: 1.5rem;
-        padding-right: 5rem;
+       
     }
     a:hover{
         color:#ffff00;
@@ -77,9 +178,9 @@ li{
     
 
     #hd{
-        background-color: rgba(0, 0, 0, 0.875);
+        background-color: rgb(9, 9, 24);
         &.scroll{
-            background-color: rgba(0, 0, 0, 0.984);
+            background-color: rgb(9, 9, 24);
            
             a{
                 color:white;
@@ -110,13 +211,13 @@ li{
             top: calc(100% + 1px);
             left:0;
             right:0;
-            background-color: white;
+            background-color: rgb(0, 0, 0);
             max-height: 0;
             overflow: hidden;
             transition:  max-height 0.5s ease-out;
 
             a{
-                color:black !important
+                color:rgb(255, 255, 255) !important
             }
 
             &:before,
@@ -137,12 +238,14 @@ li{
     }
     .workSection{
         .swiper-wrapper{
+            
              .swiper-slide{
-                min-height: calc(100vh - 120px);
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-end;
                 align-items: center;
+                height: 0;
+                padding-bottom: 60%;
             }
              .react{
                 background:url(https://img.cjthemarket.com/images/file/display/586/20221122103138241.jpg?RS=1920x500) no-repeat center;
@@ -166,10 +269,5 @@ li{
     }
 
     
-}
-hr {
-    background:white;
-    height:5px;
-    border:0;
 }
 

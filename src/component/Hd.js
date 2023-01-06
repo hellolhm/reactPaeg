@@ -43,20 +43,25 @@ function Header(props){
     return(
         <header ref={targetRef} id="hd" 
         className="App-header d-flex justify-content-between 
-                  align-items-center px-lg-5 py-2  
-                  fixed-top ">
+                  align-items-center py-2  
+                  fixed-top container-lg">
           <h1 className="mb-0">
             <a href="#top" className="d-block">
               <Logo></Logo>
-              {/* <img src="./img/logo.svg" className="img-fluid w-100" alt="logo" /> */}
+             
             </a>
           </h1>
+          <div className='d-flex justify-content-between'>
           <button className='btn d-md-none' id="allMenu" onClick={ e => {               
             setnaviOpen(!naviOpen)
             
           }} >햄버거</button>          
           
          <Navi cls={ isMobile ? 'mobileNavi' :  '' } toggle={ naviOpen ? 'on' : '' }  />
+         <a href='' target='_blank' className='d-none d-lg-block  ps-md-5'>깃</a>
+
+          </div>
+          
         </header>
     )
   }
