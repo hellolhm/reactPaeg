@@ -6,16 +6,15 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 const Worksswiper = () => {
     const swiperinfo = swiperDBlink.portfolio;
       return(
-        
-        <Swiper className='workSection'
+        <Swiper className='workSection' 
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={0}
         slidesPerView={1}
         centeredSlides={true}
-        //autoplay={{
-        //  delay: 4000,
-        //  disableOnInteraction: false,
-        //}}
+        autoplay={{
+         delay: 4000,
+         disableOnInteraction: false,
+        }}
         loop = {true} 
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
@@ -29,7 +28,7 @@ const Worksswiper = () => {
             swiperinfo.map( ( item, index ) => {
                    return(
                     <SwiperSlide className='pogame'>
-                      
+                      <img src="/img/one.jpg" className='onejpg img-fluid'></img>
                     </SwiperSlide>
                    )
               }

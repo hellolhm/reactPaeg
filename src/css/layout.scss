@@ -52,7 +52,7 @@
                 content: "";
                 display: block;
                 border-bottom: solid 1px white;
-                width: 120px;
+                width: 100px;
                 margin: 3px 0px;
         }
     
@@ -84,7 +84,6 @@ textarea::placeholder{
 input::placeholder{
     color: #04f714;
     font-size: 0.8rem;
-    padding-left: 0.5rem;
 }
 input:focus {
     outline: none;
@@ -118,10 +117,7 @@ input:focus {
     border-top: solid 2px;
     border-bottom: solid 2px;
 }
-#me{
-    // padding-left: 5rem;
-    // padding-right: 5rem;
-}
+
 input[name=company],[name=company_w],[name=talk],[name=day],[name=trip-start]{
     width: 95%;
     border: 0;
@@ -137,6 +133,70 @@ input::placeholder{
 .talk_line{
     border-left: solid 1px;
 }
+.home{
+padding-right: 2rem;
+}
+.potimg{
+    height: 50px;
+}
+input[type=submit]{
+    border-bottom: solid 2px;
+}
+.onejpg{
+    padding-top: 60%;
+}
+.duqor{
+    margin-left: 0.5rem;
+}
+.skillimg spen img{
+    width: 50px;
+    height: 55px;
+}
+:root {
+    --swiper-theme-color: #0af166 !important;
+}
+input[type=checkbox]{
+    accent-color: #04f714;
+}
+input[type="checkbox"] {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    border: 5px solid rgb(146, 143, 143);
+    appearance: none;
+  }
+
+  input[type="checkbox"]:checked {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255);
+  }
+
+@media (max-width:500px){
+    .skill_l p, .skill_r p{ font-size:1rem;}
+}
+@media (max-width:500px){
+    .dlfurt p, .dlfurt spen{ font-size:1rem;}
+}
+@media (max-width:500px){
+    .wkrurwmd p{ font-size:1rem;}
+}
+@media (max-width:440px){
+    
+}
+@media (max-width:1399px){
+    .skill_l p, .skill_r p{ font-size:1rem; }
+}
+
+
+
+  
+
+
+
+
+
 
 
 
@@ -229,7 +289,8 @@ li{
             }
 
             &.on{
-                max-height: calc(100vh - 50px); 
+                max-height: calc(100vh - 50px);
+                z-index: 100;
                 
             }
 
@@ -254,9 +315,6 @@ li{
                     background-image: url(https://img.cjthemarket.com/images/file/display/084/20220901181851256.png?RS=1920x500);
                     
                 }
-             }
-             .boot{
-
              }
         }
         .swiper-scrollbar-horizontal{

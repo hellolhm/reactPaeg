@@ -10,6 +10,10 @@
   {
     "naviText" : "Contact",
     "naviLink" : "#preInterview"
+                  },
+  {
+    "naviText" : "Git",
+    "naviLink" : "https://github.com/lettuce96"
                   }
   ]
 }

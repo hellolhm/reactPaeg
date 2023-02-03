@@ -55,10 +55,10 @@ function Header(props){
           <button className='btn d-md-none' id="allMenu" onClick={ e => {               
             setnaviOpen(!naviOpen)
             
-          }} >햄버거</button>          
+          }} >메뉴</button>          
           
          <Navi cls={ isMobile ? 'mobileNavi' :  '' } toggle={ naviOpen ? 'on' : '' }  />
-         <a href='' target='_blank' className='d-none d-lg-block  ps-md-5'>깃</a>
+         
 
           </div>
           
