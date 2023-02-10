@@ -27,7 +27,7 @@ const Preinterview = (props) => {
               </div>
 
               <div>
-                <p className='fs-4'>컬렉션</p>
+                <p className='fs-4'>Certificate</p>
                   <div className='d-md-flex wkrurwmd'>
                     <p className='text-white m-0'>2023 GTQ 포토샵 1급</p>
                     <p className='ms-md-5 text-white m-0'>2023 웹기능사</p>
